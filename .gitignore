@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Frontend
+rss_reader_front/node_modules/
+rss_reader_front/dist/
+
+# Rails
+rss_reader_api/log/*
+rss_reader_api/tmp/*
+rss_reader_api/storage/*
+rss_reader_api/vendor/bundle/
+rss_reader_api/.kamal/secrets
+
+rss_reader_dump.sql
+
+# IDE
+.vscode/
+.idea/
