@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://WhoLivesOnMars.github.io/rss_reader",
+  "homepage": "https://WhoLivesOnMars.github.io/rss_reader/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
