@@ -1,0 +1,11 @@
+@import "../../styles/tokens.css";
+
+.header {
+  margin-bottom: 12px;
+}
+
+.title {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: .2px;
+}
