@@ -19,10 +19,12 @@ feeds = [
   }
 ]
 
-feeds.each do |feed|
-  Feed.find_or_create_by!(url: feed[:url]) do |f|
-    f.title = feed[:title]
+feeds.each do |feed_data|
+  feed = Feed.find_or_create_by!(url: feed_data[:url]) do |f|
+    f.title = feed_data[:title]
   end
+
+  Feeds::FetchService.call(feed)
 end
 
-puts "Default RSS feeds created."
+puts "Default RSS feeds created and fetched."
